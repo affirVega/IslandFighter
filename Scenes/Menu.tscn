@@ -15,10 +15,10 @@ font_data = ExtResource( 1 )
 script = ExtResource( 2 )
 
 [node name="TextureRect" type="TextureRect" parent="."]
-margin_left = -38.0
-margin_top = -12.0
-margin_right = 1054.0
-margin_bottom = 602.0
+margin_left = -34.0
+margin_top = -8.0
+margin_right = 1886.0
+margin_bottom = 1072.0
 texture = ExtResource( 3 )
 
 [node name="IPAddress" type="LineEdit" parent="."]
