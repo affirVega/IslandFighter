@@ -335,7 +335,7 @@ surfaces/0 = {
 [sub_resource type="BoxShape" id=23]
 extents = Vector3( 1.09333, 2.06352, 0.0975978 )
 
-[node name="wall_3_1" type="RigidBody"]
+[node name="wall_3_1" type="StaticBody"]
 
 [node name="Node2" type="Spatial" parent="."]
 

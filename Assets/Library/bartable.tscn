@@ -65,7 +65,7 @@ surfaces/0 = {
 [sub_resource type="BoxShape" id=5]
 extents = Vector3( 0.502271, 0.283342, 0.247134 )
 
-[node name="bartable" type="RigidBody"]
+[node name="bartable" type="StaticBody"]
 
 [node name="Node2" type="Spatial" parent="."]
 

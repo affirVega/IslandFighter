@@ -65,7 +65,7 @@ surfaces/0 = {
 [sub_resource type="BoxShape" id=5]
 extents = Vector3( 0.312296, 0.247224, 0.250706 )
 
-[node name="barrel_2" type="RigidBody"]
+[node name="barrel_2" type="StaticBody"]
 
 [node name="Node2" type="Spatial" parent="."]
 

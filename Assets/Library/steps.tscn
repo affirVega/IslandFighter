@@ -461,7 +461,7 @@ extents = Vector3( 0.0309994, 0.394136, 0.20988 )
 [sub_resource type="BoxShape" id=33]
 extents = Vector3( 0.400774, 1.23208, 0.0198599 )
 
-[node name="steps" type="RigidBody"]
+[node name="steps" type="StaticBody"]
 
 [node name="Node2" type="Spatial" parent="."]
 
