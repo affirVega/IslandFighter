@@ -79,9 +79,9 @@ margin_right = 696.0
 margin_bottom = 584.0
 bbcode_enabled = true
 bbcode_text = "[b][center]News[/center][/b][i]18.08.2022[/i]
-[list][*]Updated the menu[/*][*]Updated the character[/*][*]Fixed the physics in the new level[/*][*]Removed the background in the main menu[/*][/list]"
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id faucibus nisl tincidunt eget nullam non. Mollis nunc sed id semper risus in hendrerit. Cras tincidunt lobortis feugiat vivamus. Mattis pellentesque id nibh tortor id aliquet lectus proin nibh."
 text = "News18.08.2022
-[list][*]Updated the menu[/*][*]Updated the character[/*][*]Fixed the physics in the new level[/*][*]Removed the background in the main menu[/*][/list]"
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id faucibus nisl tincidunt eget nullam non. Mollis nunc sed id semper risus in hendrerit. Cras tincidunt lobortis feugiat vivamus. Mattis pellentesque id nibh tortor id aliquet lectus proin nibh."
 
 [connection signal="pressed" from="ButtonConnect" to="." method="_on_ButtonConnect_pressed"]
 [connection signal="pressed" from="ButtonHost" to="." method="_on_ButtonHost_pressed"]
