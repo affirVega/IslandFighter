@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Fonts/Oswald-VariableFont_wght.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Scripts/Menu.gd" type="Script" id=2]
@@ -14,101 +14,93 @@ font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=4]
 
-[sub_resource type="DynamicFont" id=5]
-
-[node name="Menu" type="Node2D"]
-script = ExtResource( 2 )
-
-[node name="Control" type="Control" parent="."]
-margin_right = 1024.0
-margin_bottom = 600.0
-
-[node name="IPAddress" type="LineEdit" parent="Control"]
+[node name="Menu" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_right = -1024.0
+margin_bottom = -600.0
+script = ExtResource( 2 )
+select_skin_path = NodePath("select_skin")
+
+[node name="IPAddress" type="LineEdit" parent="."]
 margin_left = 128.0
 margin_top = 552.0
-margin_right = -704.0
-margin_bottom = -16.0
+margin_right = 320.0
+margin_bottom = 584.0
 text = "127.0.0.1"
 clear_button_enabled = true
+caret_blink = true
+caret_blink_speed = 0.5
 
-[node name="UserName" type="LineEdit" parent="Control"]
-anchor_right = 1.0
-anchor_bottom = 1.0
+[node name="UserName" type="LineEdit" parent="."]
 margin_left = 128.0
 margin_top = 512.0
-margin_right = -704.0
-margin_bottom = -56.0
+margin_right = 320.0
+margin_bottom = 544.0
 text = "Player"
 clear_button_enabled = true
+caret_blink = true
+caret_blink_speed = 0.5
 
-[node name="ButtonConnect" type="Button" parent="Control"]
-anchor_right = 1.0
-anchor_bottom = 1.0
+[node name="ButtonConnect" type="Button" parent="."]
 margin_left = 704.0
 margin_top = 552.0
-margin_right = -128.0
-margin_bottom = -17.0
+margin_right = 896.0
+margin_bottom = 583.0
 custom_fonts/font = SubResource( 1 )
 text = "Подключиться к серверу"
 align = 0
 
-[node name="ButtonHost" type="Button" parent="Control"]
-anchor_right = 1.0
-anchor_bottom = 1.0
+[node name="ButtonHost" type="Button" parent="."]
 margin_left = 704.0
 margin_top = 512.0
-margin_right = -128.0
-margin_bottom = -56.0
+margin_right = 896.0
+margin_bottom = 544.0
 custom_fonts/font = SubResource( 1 )
 text = "Создать сервер"
 align = 0
 
-[node name="LabelStatus" type="Label" parent="Control"]
+[node name="LabelStatus" type="Label" parent="."]
 margin_left = 184.0
-margin_top = 448.0
+margin_top = 416.0
 margin_right = 840.0
-margin_bottom = 481.0
+margin_bottom = 449.0
 custom_fonts/font = SubResource( 2 )
 align = 1
 valign = 1
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Control"]
-anchor_right = 1.0
-anchor_bottom = 1.0
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
 margin_top = 520.0
-margin_right = -904.0
-margin_bottom = -64.0
+margin_right = 120.0
+margin_bottom = 536.0
 custom_fonts/mono_font = SubResource( 3 )
 bbcode_enabled = true
 bbcode_text = "[right]UsenName:[/right]"
 text = "UsenName:"
 
-[node name="RichTextLabel2" type="RichTextLabel" parent="Control"]
-anchor_right = 1.0
-anchor_bottom = 1.0
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
 margin_top = 560.0
-margin_right = -904.0
-margin_bottom = -24.0
+margin_right = 120.0
+margin_bottom = 576.0
 custom_fonts/mono_font = SubResource( 4 )
 bbcode_enabled = true
 bbcode_text = "[right]IP:[/right]"
 text = "IP:"
 
-[node name="RichTextLabel3" type="RichTextLabel" parent="Control"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 328.0
-margin_top = 512.0
-margin_right = -328.0
-margin_bottom = -16.0
-custom_fonts/mono_font = SubResource( 5 )
+[node name="RichTextLabel3" type="RichTextLabel" parent="."]
+margin_top = 480.0
+margin_right = 120.0
+margin_bottom = 496.0
+custom_fonts/mono_font = SubResource( 3 )
 bbcode_enabled = true
-bbcode_text = "[b][center]News[/center][/b][i]18.08.2022[/i]
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id faucibus nisl tincidunt eget nullam non. Mollis nunc sed id semper risus in hendrerit. Cras tincidunt lobortis feugiat vivamus. Mattis pellentesque id nibh tortor id aliquet lectus proin nibh."
-text = "News18.08.2022
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id faucibus nisl tincidunt eget nullam non. Mollis nunc sed id semper risus in hendrerit. Cras tincidunt lobortis feugiat vivamus. Mattis pellentesque id nibh tortor id aliquet lectus proin nibh."
+bbcode_text = "[right]Skin:[/right]"
+text = "Skin:"
 
-[connection signal="pressed" from="Control/ButtonConnect" to="." method="_on_ButtonConnect_pressed"]
-[connection signal="pressed" from="Control/ButtonHost" to="." method="_on_ButtonHost_pressed"]
+[node name="select_skin" type="OptionButton" parent="."]
+margin_left = 128.0
+margin_top = 472.0
+margin_right = 320.0
+margin_bottom = 504.0
+
+[connection signal="pressed" from="ButtonConnect" to="." method="_on_ButtonConnect_pressed"]
+[connection signal="pressed" from="ButtonHost" to="." method="_on_ButtonHost_pressed"]
