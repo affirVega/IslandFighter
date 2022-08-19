@@ -46,7 +46,7 @@ func _on_ButtonConnect_pressed():
 
 func _connected(client_id):
 	Singleton.user_id = client_id
-	var game = preload("res://Scenes/Main.tscn").instance()
+	var game = preload("res://Scenes/Level_0.tscn").instance()
 	get_tree().get_root().add_child(game)
 	hide()
 

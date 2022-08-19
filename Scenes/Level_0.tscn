@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://Assets/Library/floor_1.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Library/wall_2_1.tscn" type="PackedScene" id=2]
@@ -21,8 +21,10 @@
 [ext_resource path="res://Assets/Library/shield_2.tscn" type="PackedScene" id=19]
 [ext_resource path="res://Assets/Library/painting.tscn" type="PackedScene" id=20]
 [ext_resource path="res://Assets/Library/flowerbed.tscn" type="PackedScene" id=21]
+[ext_resource path="res://Scripts/PlayerSpawner.gd" type="Script" id=22]
 
 [node name="Level_0" type="Spatial"]
+script = ExtResource( 22 )
 
 [node name="floor_room" type="Node" parent="."]
 
@@ -2113,3 +2115,9 @@ transform = Transform( 0.843832, 0, 0.536607, 0, 1, 0, -0.536607, 0, 0.843832, 5
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="PlayerSpawner1" type="Position3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.35779, 0.235094, 0.507682 )
+
+[node name="PlayerSpawner2" type="Position3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.6986, 0.235094, 5.12149 )
