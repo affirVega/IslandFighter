@@ -3,7 +3,7 @@ extends Spatial
 onready var playerSpawn1 = $PlayerSpawner1
 onready var playerSpawn2 = $PlayerSpawner2
 
-var playerScale = Vector3(0.3, 0.3, 0.3)
+var playerScale = Vector3(0.7, 0.7, 0.7)
 
 func _ready():
 	var player1 = preload("res://Player/Player.tscn").instance()	
