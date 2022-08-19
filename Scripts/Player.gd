@@ -1,10 +1,14 @@
 extends KinematicBody
 
+export (PackedScene) var bottle_scene
 
 const SPEED = 3
 const JUMP = 8
 const GRAVITY = 0.3
 const ROTATE = 0.05
+
+const THROW_ANGLE_DEGREES = 30
+const THROW_FORCE = 5
 
 var y_pos = 0
 
@@ -15,6 +19,13 @@ remote func _set_pos(position, rotation, scale):
 	global_transform.origin = position
 	global_rotation = rotation
 	global_scale(scale)
+
+remote func make_bottle(position: Vector3, impulse: Vector3):
+	var bottle: RigidBody = bottle_scene.instance()
+	bottle.transform.origin = position
+	bottle.add_collision_exception_with(self) # игнорируем игрока который бросает
+	bottle.apply_central_impulse(impulse) # добавляем импульс
+	get_tree().root.add_child(bottle)
 
 func _physics_process(delta):	
 	if is_network_master():
@@ -49,4 +60,16 @@ func _physics_process(delta):
 			#var mouse_pos: Vector2 = get_viewport().get_mouse_position()
 			print("attacking!")
 			print(get_global_transform())
+			
+			#var mouse_pos: Vector2 = get_viewport().get_mouse_position()
+			var spawn_pos = global_transform.origin + Vector3(0, 0.2, 0)
+			
+			var impulse: Vector3 = Vector3.FORWARD
+			var angle = THROW_ANGLE_DEGREES / 180.0 * PI
+			impulse = impulse.rotated(Vector3.RIGHT, angle) # поворачиваем наверх
+			impulse = impulse.rotated(Vector3.UP, rotation.y) # поворачиваем в бок
+			impulse = impulse.normalized() * THROW_FORCE # нормализируем и применяем силу броску
+			
+			make_bottle(spawn_pos, impulse)
+			rpc("make_bottle", spawn_pos, impulse)
 			

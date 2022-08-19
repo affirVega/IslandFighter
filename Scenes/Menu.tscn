@@ -1,8 +1,7 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Fonts/Oswald-VariableFont_wght.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Scripts/Menu.gd" type="Script" id=2]
-[ext_resource path="res://menu_fon.png" type="Texture" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 1 )
@@ -11,47 +10,97 @@ font_data = ExtResource( 1 )
 size = 21
 font_data = ExtResource( 1 )
 
-[node name="Menu" type="Node2D"]
-script = ExtResource( 2 )
+[sub_resource type="DynamicFont" id=3]
 
-[node name="TextureRect" type="TextureRect" parent="."]
-margin_left = -38.0
-margin_top = -12.0
-margin_right = 1054.0
-margin_bottom = 602.0
-texture = ExtResource( 3 )
+[sub_resource type="DynamicFont" id=4]
+
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1024.0
+margin_bottom = -600.0
+script = ExtResource( 2 )
+select_skin_path = NodePath("select_skin")
 
 [node name="IPAddress" type="LineEdit" parent="."]
-margin_left = 188.0
-margin_top = 291.0
-margin_right = 866.0
-margin_bottom = 315.0
+margin_left = 128.0
+margin_top = 552.0
+margin_right = 320.0
+margin_bottom = 584.0
 text = "127.0.0.1"
+clear_button_enabled = true
+caret_blink = true
+caret_blink_speed = 0.5
+
+[node name="UserName" type="LineEdit" parent="."]
+margin_left = 128.0
+margin_top = 512.0
+margin_right = 320.0
+margin_bottom = 544.0
+text = "Player"
+clear_button_enabled = true
+caret_blink = true
+caret_blink_speed = 0.5
 
 [node name="ButtonConnect" type="Button" parent="."]
-margin_left = 597.0
-margin_top = 346.0
-margin_right = 866.0
-margin_bottom = 414.0
+margin_left = 704.0
+margin_top = 552.0
+margin_right = 896.0
+margin_bottom = 583.0
 custom_fonts/font = SubResource( 1 )
 text = "Подключиться к серверу"
+align = 0
 
 [node name="ButtonHost" type="Button" parent="."]
-margin_left = 181.0
-margin_top = 346.0
-margin_right = 450.0
-margin_bottom = 414.0
+margin_left = 704.0
+margin_top = 512.0
+margin_right = 896.0
+margin_bottom = 544.0
 custom_fonts/font = SubResource( 1 )
 text = "Создать сервер"
+align = 0
 
 [node name="LabelStatus" type="Label" parent="."]
-margin_left = 181.0
-margin_top = 436.0
-margin_right = 866.0
-margin_bottom = 469.0
+margin_left = 184.0
+margin_top = 416.0
+margin_right = 840.0
+margin_bottom = 449.0
 custom_fonts/font = SubResource( 2 )
 align = 1
 valign = 1
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_top = 520.0
+margin_right = 120.0
+margin_bottom = 536.0
+custom_fonts/mono_font = SubResource( 3 )
+bbcode_enabled = true
+bbcode_text = "[right]UsenName:[/right]"
+text = "UsenName:"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+margin_top = 560.0
+margin_right = 120.0
+margin_bottom = 576.0
+custom_fonts/mono_font = SubResource( 4 )
+bbcode_enabled = true
+bbcode_text = "[right]IP:[/right]"
+text = "IP:"
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="."]
+margin_top = 480.0
+margin_right = 120.0
+margin_bottom = 496.0
+custom_fonts/mono_font = SubResource( 3 )
+bbcode_enabled = true
+bbcode_text = "[right]Skin:[/right]"
+text = "Skin:"
+
+[node name="select_skin" type="OptionButton" parent="."]
+margin_left = 128.0
+margin_top = 472.0
+margin_right = 320.0
+margin_bottom = 504.0
 
 [connection signal="pressed" from="ButtonConnect" to="." method="_on_ButtonConnect_pressed"]
 [connection signal="pressed" from="ButtonHost" to="." method="_on_ButtonHost_pressed"]

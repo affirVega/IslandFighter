@@ -1,9 +1,12 @@
-extends Node2D
+extends Control
 
 onready var iPAddress = $IPAddress
 onready var buttonHost = $ButtonHost
 onready var buttonConnect = $ButtonConnect
 onready var labelStatus = $LabelStatus
+
+export (NodePath) var select_skin_path
+onready var select_skin = get_node(select_skin_path)
 
 func _ready():
 	get_tree().connect("network_peer_connected", self, "_connected")
@@ -11,7 +14,14 @@ func _ready():
 	get_tree().connect("connection_failed", self, "_connected_fail")
 	get_tree().connect("connected_to_server", self, "_connected_ok")
 	get_tree().connect("server_disconnected", self, "_server_disconnected")
-	
+	add_items_skin()
+
+func add_items_skin():
+	select_skin.add_item("Maksvell")
+	select_skin.add_item("CoolDog")
+	select_skin.add_item("Low3")
+	select_skin.add_item("s1tn4m")
+	select_skin.add_item("Mika Moro")
 
 
 func _on_ButtonHost_pressed():
@@ -36,7 +46,7 @@ func _on_ButtonConnect_pressed():
 
 func _connected(client_id):
 	Singleton.user_id = client_id
-	var game = preload("res://Scenes/Main.tscn").instance()
+	var game = preload("res://Scenes/Level_0.tscn").instance()
 	get_tree().get_root().add_child(game)
 	hide()
 
