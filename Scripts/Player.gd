@@ -21,7 +21,8 @@ remote func _set_pos(position, rotation, scale):
 	global_scale(scale)
 
 remote func make_bottle(position: Vector3, impulse: Vector3):
-	var bottle: RigidBody = bottle_scene.instance()
+	#var bottle: RigidBody = bottle_scene.instance()
+	var bottle: RigidBody = preload("res://Player/Bottle.tscn").instance()
 	bottle.transform.origin = position
 	bottle.add_collision_exception_with(self) # игнорируем игрока который бросает
 	bottle.apply_central_impulse(impulse) # добавляем импульс
@@ -72,4 +73,3 @@ func _physics_process(delta):
 			
 			make_bottle(spawn_pos, impulse)
 			rpc("make_bottle", spawn_pos, impulse)
-			

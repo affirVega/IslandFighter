@@ -1,5 +1,6 @@
 extends Control
 
+
 onready var iPAddress = $IPAddress
 onready var buttonHost = $ButtonHost
 onready var buttonConnect = $ButtonConnect
@@ -43,11 +44,14 @@ func _on_ButtonConnect_pressed():
 	client.create_client(ip, 3456)	
 	get_tree().set_network_peer(client) # Replace with function body.
 	_set_status("Поиск сервера...", true)
+	
 
 func _connected(client_id):
 	Singleton.user_id = client_id
 	var game = preload("res://Scenes/Level_0.tscn").instance()
+	
 	get_tree().get_root().add_child(game)
+	
 	hide()
 
 func _set_status(text, isok):

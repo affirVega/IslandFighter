@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Assets/Library/player_skins_lib/mikamoro.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Library/player_skins_lib/low3.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Assets/Library/player_skins_lib/cooldog.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Assets/Library/player_skins_lib/s1tn4m.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Assets/Library/player_skins_lib/maksvell.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scripts/Player.gd" type="Script" id=6]
 
 [sub_resource type="BoxShape" id=1]
 extents = Vector3( 0.140052, 0.61439, 0.13277 )
@@ -12,9 +13,10 @@ extents = Vector3( 0.140052, 0.61439, 0.13277 )
 [sub_resource type="BoxShape" id=2]
 extents = Vector3( 0.317474, 0.622839, 0.254638 )
 
-[node name="Spatial" type="KinematicBody"]
+[node name="Spatial" type="KinematicBody" groups=["Player"]]
+script = ExtResource( 6 )
 
-[node name="Skins" type="Node" parent="."]
+[node name="Skins" type="Spatial" parent="."]
 
 [node name="cooldog" parent="Skins" instance=ExtResource( 3 )]
 visible = false
@@ -38,3 +40,7 @@ shape = SubResource( 1 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.615, 0 )
 shape = SubResource( 2 )
 disabled = true
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.977849, 0.209311, 0, -0.209311, 0.977849, 0, 1.55712, 1.8295 )
+fov = 71.9877
