@@ -8,6 +8,16 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Reference",
+"class": "GV",
+"language": "GDScript",
+"path": "res://Scripts/GV.gd"
+} ]
+_global_script_class_icons={
+"GV": ""
+}
+
 [application]
 
 config/name="IslandFighter"

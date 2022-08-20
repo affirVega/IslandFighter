@@ -10,6 +10,7 @@ export (NodePath) var select_skin_path
 onready var select_skin = get_node(select_skin_path)
 
 func _ready():
+	randomize()
 	get_tree().connect("network_peer_connected", self, "_connected")
 	get_tree().connect("network_peer_disconnected", self, "_player_disconnected")
 	get_tree().connect("connection_failed", self, "_connected_fail")
@@ -18,12 +19,8 @@ func _ready():
 	add_items_skin()
 
 func add_items_skin():
-	select_skin.add_item("Maksvell")
-	select_skin.add_item("CoolDog")
-	select_skin.add_item("Low3")
-	select_skin.add_item("s1tn4m")
-	select_skin.add_item("Mika Moro")
-
+	for item in GV.skins:
+		select_skin.add_item(item)
 
 func _on_ButtonHost_pressed():
 	var server = NetworkedMultiplayerENet.new()
@@ -51,7 +48,7 @@ func _connected(client_id):
 	var game = preload("res://Scenes/Level_0.tscn").instance()
 	
 	get_tree().get_root().add_child(game)
-	
+	Singleton.current_level = game
 	hide()
 
 func _set_status(text, isok):
@@ -83,13 +80,13 @@ func _player_disconnected(_id):
 
 func _server_disconnected():
 	_end_game("Сервер разорвал соединение")
-	
-	
+
 func _end_game(with_error = ""):
-	if has_node("/root/Menu"):
+	if Singleton.current_level != null:
 		# Erase immediately, otherwise network might show
-		# errors (this is why we connected deferred above).
-		get_node("/root/Menu").free()
+		# errors (this is why we connected deferred above)
+		Singleton.current_level.queue_free()
+		Singleton.current_level = null
 		show()
 
 	get_tree().set_network_peer(null) # Remove peer.
@@ -97,3 +94,7 @@ func _end_game(with_error = ""):
 	buttonConnect.set_disabled(false)
 
 	_set_status(with_error, false)
+
+
+func _on_select_skin_item_selected(index):
+	Singleton.current_skin = index
