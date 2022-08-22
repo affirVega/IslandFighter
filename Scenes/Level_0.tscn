@@ -2119,40 +2119,5 @@ __meta__ = {
 [node name="PlayerSpawner1" type="Position3D" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.35779, 0.235094, 0.507682 )
 
-<<<<<<< Updated upstream
 [node name="PlayerSpawner2" type="Position3D" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.6986, 0.235094, 5.12149 )
-=======
-[node name="PlayerSpawner1" type="Position3D" parent="PlayerSpawners"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3853, 0.569848, 0.507682 )
-
-[node name="PlayerSpawner2" type="Position3D" parent="PlayerSpawners"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.679, 0.57, -6.245 )
-
-[node name="PlayerSpawner3" type="Position3D" parent="PlayerSpawners"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.62732, 0.569848, -5.8745 )
-
-[node name="PlayerSpawner4" type="Position3D" parent="PlayerSpawners"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.75018, 0.569848, -7.39165 )
-
-[node name="PlayerSpawner5" type="Position3D" parent="PlayerSpawners"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.36832, 0.569848, -2.05508 )
-
-[node name="PlayerSpawner6" type="Position3D" parent="PlayerSpawners"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.02153, 0.569848, 1.08053 )
-
-[node name="PlayerSpawner7" type="Position3D" parent="PlayerSpawners"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.42358, 0.569848, 5.7538 )
-
-[node name="PlayerSpawner8" type="Position3D" parent="PlayerSpawners"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.92788, 0.569848, 6.74875 )
-
-[node name="PlayerSpawner9" type="Position3D" parent="PlayerSpawners"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.22446, 0.569848, 8.31656 )
-
-[node name="PlayerSpawner10" type="Position3D" parent="PlayerSpawners"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.13893, 0.569848, 3.61314 )
-
-[node name="PlayerSpawner11" type="Position3D" parent="PlayerSpawners"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.12896, 0.569848, 4.21615 )
->>>>>>> Stashed changes
