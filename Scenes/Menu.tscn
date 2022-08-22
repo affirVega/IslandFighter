@@ -1,7 +1,9 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Fonts/Oswald-VariableFont_wght.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Scripts/Menu.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Library/player_skins_lib/skin_preview.tscn" type="PackedScene" id=3]
+[ext_resource path="res://icon.png" type="Texture" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 1 )
@@ -101,6 +103,17 @@ margin_left = 128.0
 margin_top = 472.0
 margin_right = 320.0
 margin_bottom = 504.0
+
+[node name="Viewport" type="Viewport" parent="."]
+size = Vector2( 500, 500 )
+transparent_bg = true
+render_target_v_flip = true
+
+[node name="skin_preview" parent="Viewport" instance=ExtResource( 3 )]
+
+[node name="Skins" type="Sprite" parent="."]
+position = Vector2( 188, 232 )
+texture = ExtResource( 4 )
 
 [connection signal="pressed" from="ButtonConnect" to="." method="_on_ButtonConnect_pressed"]
 [connection signal="pressed" from="ButtonHost" to="." method="_on_ButtonHost_pressed"]

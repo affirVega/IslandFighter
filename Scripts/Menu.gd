@@ -16,6 +16,17 @@ func _ready():
 	get_tree().connect("server_disconnected", self, "_server_disconnected")
 	add_items_skin()
 
+func _process(delta):
+	var texture = $Viewport.get_texture()
+	$Skins.texture = texture
+	$Viewport/skin_preview/skins.rotation.y += 0.01
+	#Для дебага по хвосту
+	#$Viewport/skin_preview/skins.rotation.y = 8.9
+	$Viewport/skin_preview/skins/mikamoro.visible = false
+	$Viewport/skin_preview/skins/cooldog.visible = false
+	$Viewport/skin_preview/skins/s1tn4m.visible = false
+	$Viewport/skin_preview/skins/low3.visible = false
+
 func add_items_skin():
 	select_skin.add_item("Maksvell")
 	select_skin.add_item("CoolDog")
