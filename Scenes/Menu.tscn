@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Scripts/Menu.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Library/player_skins_lib/skin_preview.tscn" type="PackedScene" id=2]
+[ext_resource path="res://icon.png" type="Texture" id=3]
 
 [node name="Menu" type="Control"]
 anchor_right = 1.0
@@ -105,6 +107,18 @@ margin_left = 128.0
 margin_top = -128.0
 margin_right = 320.0
 margin_bottom = -96.0
+
+
+[node name="Viewport" type="Viewport" parent="."]
+size = Vector2( 500, 500 )
+transparent_bg = true
+render_target_v_flip = true
+
+[node name="skin_preview" parent="Viewport" instance=ExtResource( 2 )]
+
+[node name="Skins" type="Sprite" parent="."]
+position = Vector2( 188, 232 )
+texture = ExtResource( 3 )
 
 [connection signal="text_changed" from="UserName" to="." method="_on_UserName_text_changed"]
 [connection signal="pressed" from="ButtonConnect" to="." method="_on_ButtonConnect_pressed"]
