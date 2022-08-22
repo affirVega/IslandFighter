@@ -13,6 +13,7 @@ const THROW_FORCE = 5
 var SKIN_OBJECTS = {}
 
 var y_pos = 0
+var is_dead = false
 
 func _ready():
 	SKIN_OBJECTS = {
@@ -40,15 +41,16 @@ remote func _set_pos(position, rotation, scale):
 
 remote func make_bottle(position: Vector3, impulse: Vector3):
 	#var bottle: RigidBody = bottle_scene.instance()
-	var bottle: RigidBody = preload("res://Player/Bottle.tscn").instance()
+	var bottle: RigidBody = preload("res://Bottle/Bottle.tscn").instance()
 	bottle.transform.origin = position
 	bottle.add_collision_exception_with(self) # игнорируем игрока который бросает
 	bottle.apply_central_impulse(impulse) # добавляем импульс
 	get_tree().root.add_child(bottle)
 
 func _physics_process(delta):
-	if not is_network_master():
-		return
+	if not is_network_master(): return
+	if is_dead: return
+	
 	var moving_vec = Vector3()
 	if Input.is_action_pressed("player_forward"):		
 		moving_vec.z -= 1
@@ -95,3 +97,9 @@ func _physics_process(delta):
 	
 	if Input.is_mouse_button_pressed(BUTTON_LEFT):
 		rpc('set_skin', Singleton.current_skin)
+		
+
+
+func hit():
+	print('i dieded')
+	is_dead = true
