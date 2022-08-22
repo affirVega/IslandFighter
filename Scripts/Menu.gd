@@ -98,3 +98,7 @@ func _end_game(with_error = ""):
 
 func _on_select_skin_item_selected(index):
 	Singleton.current_skin = index
+
+
+func _on_UserName_text_changed(new_text):
+	Singleton.nickname = new_text

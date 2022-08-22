@@ -27,6 +27,11 @@ func _ready():
 	if is_network_master():
 		set_skin(Singleton.current_skin)
 		rpc('set_skin', Singleton.current_skin)
+		set_nickname(Singleton.nickname)
+		rpc('set_nickname', Singleton.nickname)
+
+remote func set_nickname(new_name: String):
+	$Nametag.text = new_name
 
 remote func set_skin(index: int):
 	for skin in SKIN_OBJECTS.values():

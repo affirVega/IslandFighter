@@ -106,6 +106,7 @@ margin_top = -128.0
 margin_right = 320.0
 margin_bottom = -96.0
 
+[connection signal="text_changed" from="UserName" to="." method="_on_UserName_text_changed"]
 [connection signal="pressed" from="ButtonConnect" to="." method="_on_ButtonConnect_pressed"]
 [connection signal="pressed" from="ButtonHost" to="." method="_on_ButtonHost_pressed"]
 [connection signal="item_selected" from="select_skin" to="." method="_on_select_skin_item_selected"]
