@@ -28,3 +28,5 @@ size = 1.49641
 
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
 transform = Transform( -1, 6.16557e-08, -1.49079e-07, -1.28041e-07, 0.258819, 0.965926, 9.81392e-08, 0.965926, -0.258819, 0.0341048, 0.0205422, 0.00376606 )
+light_energy = 0.5
+light_specular = 0.0

@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Scripts/Menu.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Library/player_skins_lib/skin_preview.tscn" type="PackedScene" id=2]
@@ -107,7 +107,6 @@ margin_left = 128.0
 margin_top = -128.0
 margin_right = 320.0
 margin_bottom = -96.0
-
 
 [node name="Viewport" type="Viewport" parent="."]
 size = Vector2( 500, 500 )

@@ -8,6 +8,7 @@ onready var labelStatus = $LabelStatus
 
 export (NodePath) var select_skin_path
 onready var select_skin = get_node(select_skin_path)
+var SKIN_OBJECTS = {}
 
 func _ready():
 	randomize()
@@ -17,17 +18,29 @@ func _ready():
 	get_tree().connect("connected_to_server", self, "_connected_ok")
 	get_tree().connect("server_disconnected", self, "_server_disconnected")
 	add_items_skin()
+	
+	SKIN_OBJECTS = {
+		GV.COOLDOG: $Viewport/skin_preview/skins/cooldog,
+		GV.LOW3: $Viewport/skin_preview/skins/low3,
+		GV.MAKSVELL: $Viewport/skin_preview/skins/maksvell,
+		GV.MIKA: $Viewport/skin_preview/skins/mikamoro,
+		GV.S1TN4M: $Viewport/skin_preview/skins/s1tn4m,
+	}
+	set_skin_menu(Singleton.current_skin)
+
+func set_skin_menu(index: int):
+	for skin in SKIN_OBJECTS.values():
+		skin.visible = false
+	assert(index in SKIN_OBJECTS, 'передан невалидный индекс скина')
+	SKIN_OBJECTS[index].visible = true
 
 func _process(delta):
 	var texture = $Viewport.get_texture()
 	$Skins.texture = texture
-	$Viewport/skin_preview/skins.rotation.y += 0.01
+	#$Viewport/skin_preview/skins.rotation.y += 0.01
+	$Viewport/skin_preview/skins.rotation_degrees.y += 30*delta
 	#Для дебага по хвосту
 	#$Viewport/skin_preview/skins.rotation.y = 8.9
-	$Viewport/skin_preview/skins/mikamoro.visible = false
-	$Viewport/skin_preview/skins/cooldog.visible = false
-	$Viewport/skin_preview/skins/s1tn4m.visible = false
-	$Viewport/skin_preview/skins/low3.visible = false
 
 func add_items_skin():
 	for item in GV.skins:
@@ -58,6 +71,7 @@ func _connected(client_id):
 	Singleton.user_id = client_id
 	var game = preload("res://Scenes/Level_0.tscn").instance()
 	
+	$Viewport/skin_preview.visible = false
 	get_tree().get_root().add_child(game)
 	Singleton.current_level = game
 	hide()
@@ -109,7 +123,8 @@ func _end_game(with_error = ""):
 
 func _on_select_skin_item_selected(index):
 	Singleton.current_skin = index
-
+	set_skin_menu(Singleton.current_skin)
 
 func _on_UserName_text_changed(new_text):
 	Singleton.nickname = new_text
+
