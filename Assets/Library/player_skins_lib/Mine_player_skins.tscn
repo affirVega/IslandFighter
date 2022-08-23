@@ -13,13 +13,13 @@ extents = Vector3( 0.140052, 0.61439, 0.13277 )
 [sub_resource type="BoxShape" id=2]
 extents = Vector3( 0.317474, 0.622839, 0.254638 )
 
-[sub_resource type="DynamicFontData" id=3]
+[sub_resource type="DynamicFontData" id=5]
 font_path = "res://Fonts/OpenSans-VariableFont_wdth,wght.ttf"
 
 [sub_resource type="DynamicFont" id=4]
 size = 160
 outline_size = 10
-font_data = SubResource( 3 )
+font_data = SubResource( 5 )
 
 [node name="Spatial" type="KinematicBody" groups=["Player"]]
 script = ExtResource( 6 )

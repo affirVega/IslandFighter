@@ -17,6 +17,7 @@ margin_left = 128.0
 margin_top = -48.0
 margin_right = 320.0
 margin_bottom = -16.0
+hint_tooltip = "Поле для ввода IP адресса сервера"
 text = "127.0.0.1"
 clear_button_enabled = true
 caret_blink = true
@@ -29,6 +30,7 @@ margin_left = 128.0
 margin_top = -88.0
 margin_right = 320.0
 margin_bottom = -56.0
+hint_tooltip = "Поле для ввода никнейма"
 text = "Player"
 clear_button_enabled = true
 caret_blink = true
@@ -93,9 +95,9 @@ text = "IP:"
 [node name="RichTextLabel3" type="RichTextLabel" parent="."]
 anchor_top = 1.0
 anchor_bottom = 1.0
-margin_top = -125.0
+margin_top = -124.0
 margin_right = 120.0
-margin_bottom = -99.0
+margin_bottom = -100.0
 bbcode_enabled = true
 bbcode_text = "[right]Skin:[/right]"
 text = "Skin:"
@@ -107,6 +109,7 @@ margin_left = 128.0
 margin_top = -128.0
 margin_right = 320.0
 margin_bottom = -96.0
+hint_tooltip = "Выбор скина"
 
 [node name="Viewport" type="Viewport" parent="."]
 size = Vector2( 500, 500 )
@@ -118,6 +121,26 @@ render_target_v_flip = true
 [node name="Skins" type="Sprite" parent="."]
 position = Vector2( 188, 232 )
 texture = ExtResource( 3 )
+
+[node name="ColorPickerButton" type="ColorPickerButton" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -32.0
+margin_bottom = 32.0
+hint_tooltip = "Текст"
+flat = true
+icon_align = 1
+color = Color( 1, 1, 1, 1 )
+
+[node name="ColorPickerButton2" type="ColorPickerButton" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -32.0
+margin_top = 32.0
+margin_bottom = 64.0
+hint_tooltip = "Обводка"
+flat = true
+icon_align = 1
 
 [connection signal="text_changed" from="UserName" to="." method="_on_UserName_text_changed"]
 [connection signal="pressed" from="ButtonConnect" to="." method="_on_ButtonConnect_pressed"]

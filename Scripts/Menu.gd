@@ -41,6 +41,9 @@ func _process(delta):
 	$Viewport/skin_preview/skins.rotation_degrees.y += 30*delta
 	#Для дебага по хвосту
 	#$Viewport/skin_preview/skins.rotation.y = 8.9
+	$Viewport/skin_preview/Nametag_preview.modulate = $ColorPickerButton.color
+	$Viewport/skin_preview/Nametag_preview.outline_modulate = $ColorPickerButton2.color
+	$Viewport/skin_preview/Nametag_preview.text = $UserName.text
 
 func add_items_skin():
 	for item in GV.skins:
