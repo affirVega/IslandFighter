@@ -12,7 +12,7 @@ _global_script_classes=[ {
 "base": "Reference",
 "class": "GV",
 "language": "GDScript",
-"path": "res://Scripts/GV.gd"
+"path": "res://scripts/GV.gd"
 } ]
 _global_script_class_icons={
 "GV": ""
@@ -21,7 +21,7 @@ _global_script_class_icons={
 [application]
 
 config/name="IslandFighter"
-run/main_scene="res://Scenes/Menu.tscn"
+run/main_scene="res://scenes/Menu/Menu.tscn"
 boot_splash/show_image=false
 boot_splash/fullsize=false
 boot_splash/use_filter=false
@@ -31,12 +31,12 @@ config/windows_native_icon="res://game icon.ico"
 
 [autoload]
 
-Singleton="*res://Scripts/singleton.gd"
+Singleton="*res://scripts/singleton.gd"
 
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
-theme/custom_font="res://Fonts/default_font.tres"
+theme/custom_font="res://fonts/default_font.tres"
 
 [input]
 

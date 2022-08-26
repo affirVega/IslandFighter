@@ -1,0 +1,2152 @@
+[gd_scene load_steps=23 format=2]
+
+[ext_resource path="res://Scenes/Level_0/floor_1/floor_1.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Level_0/wall_2_1/wall_2_1.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Level_0/wall_2_0/wall_2_0.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Level_0/wall_3_0/wall_3_0.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Level_0/wall_3_1/wall_3_1.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/Level_0/wall_1/wall_1.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/Level_0/wall_0/wall_0.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scenes/Level_0/table/table.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scenes/Level_0/skamia/skamia.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Scenes/Level_0/taburet/taburet.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Scenes/Level_0/bartable_1/bartable_1.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Scenes/Level_0/barrel/barrel.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Scenes/Level_0/bartable/bartable.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Scenes/Level_0/barrel_2/barrel_2.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Scenes/Level_0/wine/wine.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Scenes/Level_0/steps/steps.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Scenes/Level_0/steps_mini/steps_mini.tscn" type="PackedScene" id=17]
+[ext_resource path="res://Scenes/Level_0/shield/shield.tscn" type="PackedScene" id=18]
+[ext_resource path="res://Scenes/Level_0/shield_2/shield_2.tscn" type="PackedScene" id=19]
+[ext_resource path="res://Scenes/Level_0/painting/painting.tscn" type="PackedScene" id=20]
+[ext_resource path="res://Scenes/Level_0/flowerbed/flowerbed.tscn" type="PackedScene" id=21]
+[ext_resource path="res://scripts/PlayerSpawner.gd" type="Script" id=22]
+
+[node name="Level_0" type="Spatial"]
+script = ExtResource( 22 )
+
+[node name="floor_room" type="Node" parent="."]
+
+[node name="floor_1" parent="floor_room" instance=ExtResource( 1 )]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_2" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_3" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_4" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_5" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_7" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_8" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_9" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_6" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_10" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_11" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_12" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_13" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_14" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_15" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_16" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_17" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_18" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_19" parent="floor_room" instance=ExtResource( 1 )]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_20" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_21" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_22" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_23" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_24" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_25" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_26" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_27" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_37" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_38" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_39" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_40" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_41" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_42" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_43" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_44" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_45" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_46" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_47" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_48" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_49" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_50" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_51" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_52" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_53" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_54" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_28" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_29" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_30" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_31" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_32" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_33" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_34" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_35" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_36" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_55" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_56" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_57" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_58" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_59" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_60" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_61" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_62" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_63" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_64" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_65" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_66" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_67" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_68" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_69" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_70" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_71" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_72" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_73" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_74" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_75" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_76" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_77" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_78" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_79" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_80" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_81" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_82" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_83" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_84" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_85" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_86" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_87" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_88" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_89" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_90" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_91" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_92" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_93" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_94" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_95" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_96" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_97" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_98" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_99" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_100" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_101" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_102" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_103" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_104" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_105" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_106" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_107" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_108" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_109" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_110" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_111" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_112" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_113" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_114" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_115" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_116" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_117" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_118" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_119" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_120" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_121" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_122" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_123" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_124" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_125" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_126" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_127" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_128" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_129" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_130" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_131" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_132" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_133" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_134" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_135" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_136" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_137" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_138" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_139" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_140" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_141" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_142" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_143" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_144" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_145" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_146" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_147" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_148" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_149" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_150" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_151" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_152" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_153" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_154" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_155" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_156" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_157" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_158" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_159" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_160" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_161" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor_162" parent="floor_room" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_room" type="Node" parent="."]
+
+[node name="wall_2_0" parent="wall_room" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -9 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_2_1" parent="wall_room" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -9 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_2_2" parent="wall_room" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -9 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_2_3" parent="wall_room" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -9 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_2_4" parent="wall_room" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -9 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_2_5" parent="wall_room" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -9 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_2_6" parent="wall_room" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -9 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_2_8" parent="wall_room" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -9 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_2_7" parent="wall_room" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -9 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_2_9" parent="wall_room" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 9, 0, -6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_2_10" parent="wall_room" instance=ExtResource( 2 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 9, 0, -8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_2_11" parent="wall_room" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 9, 0, -2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_2_12" parent="wall_room" instance=ExtResource( 2 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 9, 0, -4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_2_13" parent="wall_room" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 9, 0, 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_2_14" parent="wall_room" instance=ExtResource( 2 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 9, 0, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_2_15" parent="wall_room" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 9, 0, 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_2_16" parent="wall_room" instance=ExtResource( 2 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 9, 0, 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_2_17" parent="wall_room" instance=ExtResource( 2 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 9, 0, 8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_2_18" parent="wall_room" instance=ExtResource( 3 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8, 0, 9 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_2_19" parent="wall_room" instance=ExtResource( 2 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 6, 0, 9 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_2_20" parent="wall_room" instance=ExtResource( 3 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4, 0, 9 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_2_21" parent="wall_room" instance=ExtResource( 2 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2, 0, 9 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_2_22" parent="wall_room" instance=ExtResource( 3 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.34465e-07, 0, 9 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_2_23" parent="wall_room" instance=ExtResource( 2 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2, 0, 9 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_2_24" parent="wall_room" instance=ExtResource( 3 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4, 0, 9 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_2_25" parent="wall_room" instance=ExtResource( 3 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8, 0, 9 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_2_26" parent="wall_room" instance=ExtResource( 2 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6, 0, 9 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_2_27" parent="wall_room" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_2_28" parent="wall_room" instance=ExtResource( 2 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, 8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_2_29" parent="wall_room" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_2_30" parent="wall_room" instance=ExtResource( 2 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_2_31" parent="wall_room" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_2_32" parent="wall_room" instance=ExtResource( 2 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, 7.15256e-07 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_2_33" parent="wall_room" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_2_34" parent="wall_room" instance=ExtResource( 2 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_2_35" parent="wall_room" instance=ExtResource( 2 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall" type="Node" parent="."]
+
+[node name="wall_3_0" parent="wall" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_3_1" parent="wall" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_3_2" parent="wall" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_3_3" parent="wall" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_3_8" parent="wall" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 0, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_3_9" parent="wall" instance=ExtResource( 5 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 0, 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_3_4" parent="wall" instance=ExtResource( 4 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8, 0, 5 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_3_5" parent="wall" instance=ExtResource( 5 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6, 0, 5 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_3_6" parent="wall" instance=ExtResource( 4 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4, 0, 5 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_3_7" parent="wall" instance=ExtResource( 5 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2, 0, 5 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_3_10" parent="wall" instance=ExtResource( 5 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8, 0, -5 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_3_12" parent="wall" instance=ExtResource( 5 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4, 0, -5 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_3_14" parent="wall" instance=ExtResource( 5 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3, 0, -2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_3_11" parent="wall" instance=ExtResource( 4 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6, 0, -5 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_3_13" parent="wall" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3, 0, -4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_3_15" parent="wall" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_3_16" parent="wall" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_0" parent="wall" instance=ExtResource( 7 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5, 0, 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_1" parent="wall" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 5 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -0.5, 0.5, 0, 3.86828, 0 )
+light_energy = 0.413
+light_indirect_energy = 0.0
+light_specular = 0.0
+
+[node name="obj_1" type="Node" parent="."]
+
+[node name="table" parent="obj_1" instance=ExtResource( 8 )]
+transform = Transform( -0.63558, 0, 0.772035, 0, 1, 0, -0.772035, 0, -0.63558, 1.79906, 0, -2.81904 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="skamia" parent="obj_1" instance=ExtResource( 9 )]
+transform = Transform( -0.462554, 0, 0.886591, 0, 1, 0, -0.886591, 0, -0.462554, 1.21883, 0, -3.63349 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="table7" parent="obj_1" instance=ExtResource( 8 )]
+transform = Transform( -0.863369, 0, -0.504573, 0, 1, 0, 0.504573, 0, -0.863369, -6.88668, 0, 2.80208 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="skamia13" parent="obj_1" instance=ExtResource( 9 )]
+transform = Transform( -0.997702, 0, 0.0677539, 0, 1, 0, -0.0677539, 0, -0.997702, -7.61476, 0, 3.75031 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="skamia14" parent="obj_1" instance=ExtResource( 9 )]
+transform = Transform( -0.994817, 0, -0.101682, 0, 1, 0, 0.101682, 0, -0.994817, -5.6776, 0, 3.05635 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="table2" parent="obj_1" instance=ExtResource( 8 )]
+transform = Transform( -0.309482, 0, -0.950905, 0, 1, 0, 0.950905, 0, -0.309482, 5.16518, 0, -6.87629 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="table3" parent="obj_1" instance=ExtResource( 8 )]
+transform = Transform( -0.233458, -0.914626, 0.330086, -0.968934, 0.24732, 0, -0.081637, -0.319832, -0.943951, 6.38408, 0.332404, -2.19097 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="skamia3" parent="obj_1" instance=ExtResource( 9 )]
+transform = Transform( -0.472627, 0, -0.881262, 0, 1, 0, 0.881262, 0, -0.472627, 4.6539, 0, -6.01687 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="skamia6" parent="obj_1" instance=ExtResource( 9 )]
+transform = Transform( -0.99688, 0, 0.0789286, 0, 1, 0, -0.0789286, 0, -0.99688, 8.21093, 0, -3.29124 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="skamia5" parent="obj_1" instance=ExtResource( 9 )]
+transform = Transform( -3.11349e-08, -0.712283, -0.701892, 1, -4.37114e-08, 0, -3.06807e-08, -0.701892, 0.712283, 6.17991, 0.241212, -3.71246 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="table6" parent="obj_1" instance=ExtResource( 8 )]
+transform = Transform( 0.110821, 0.434166, 0.89399, -0.968934, 0.24732, 0, -0.221102, -0.866217, 0.448087, 6.64351, 0.332404, 1.6122 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="skamia11" parent="obj_1" instance=ExtResource( 9 )]
+transform = Transform( -0.187964, 0, 0.982176, 0, 1, 0, -0.982176, 0, -0.187964, 7.80448, 0, 0.45077 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="skamia20" parent="obj_1" instance=ExtResource( 9 )]
+transform = Transform( -0.984753, 0, -0.173957, 0, 1, 0, 0.173957, 0, -0.984753, -4.90157, 0, 6.15692 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="skamia12" parent="obj_1" instance=ExtResource( 9 )]
+transform = Transform( -2.06572e-08, -0.472582, 0.881287, 1, -4.37114e-08, 0, 3.85223e-08, 0.881287, 0.472582, 6.27599, 0.241212, 2.73353 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="table10" parent="obj_1" instance=ExtResource( 8 )]
+transform = Transform( 0.216479, 0.848104, -0.483588, -0.968934, 0.24732, 0, 0.119601, 0.468564, 0.875296, -3.22851, 0.332404, 7.41781 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="skamia19" parent="obj_1" instance=ExtResource( 9 )]
+transform = Transform( 4.12331e-08, 0.943304, -0.33193, 1, -4.37114e-08, 0, -1.45092e-08, -0.33193, -0.943304, -2.2778, 0.241212, 6.31106 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="table4" parent="obj_1" instance=ExtResource( 8 )]
+transform = Transform( -0.230255, -0.902076, -0.365023, -0.968934, 0.24732, 0, 0.0902776, 0.353683, -0.930999, -6.6464, 0.332404, -2.84327 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="skamia7" parent="obj_1" instance=ExtResource( 9 )]
+transform = Transform( 0.981192, 0, -0.193035, 0, 1, 0, 0.193035, 0, 0.981192, -5.91788, 0, -3.74596 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="skamia8" parent="obj_1" instance=ExtResource( 9 )]
+transform = Transform( -3.07485e-08, -0.703444, 0.71075, 1, -4.37114e-08, 0, 3.10679e-08, 0.71075, 0.703444, -7.68053, 0.241212, -2.37269 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="skamia4" parent="obj_1" instance=ExtResource( 9 )]
+transform = Transform( -0.696414, 0, -0.71764, 0, 1, 0, 0.71764, 0, -0.696414, 6.13007, 0, -7.55013 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="table8" parent="obj_1" instance=ExtResource( 8 )]
+transform = Transform( -0.276929, 0, -0.96089, 0, 1, 0, 0.96089, 0, -0.276929, -1.5138, 0, 1.9084 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="skamia15" parent="obj_1" instance=ExtResource( 9 )]
+transform = Transform( 0.0344288, 0, -0.999407, 0, 1, 0, 0.999407, 0, 0.0344288, -2.24079, 0, 2.68505 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="skamia16" parent="obj_1" instance=ExtResource( 9 )]
+transform = Transform( 0.359183, 0, -0.933267, 0, 1, 0, 0.933267, 0, 0.359183, -1.6246, 0, 0.576221 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="table5" parent="obj_1" instance=ExtResource( 8 )]
+transform = Transform( -0.778397, 0, 0.627773, 0, 1, 0, -0.627773, 0, -0.778397, -4.02175, 0, -3.37388 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="skamia9" parent="obj_1" instance=ExtResource( 9 )]
+transform = Transform( -0.820062, 0, 0.572274, 0, 1, 0, -0.572274, 0, -0.820062, -4.78422, 0, -3.89249 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="skamia10" parent="obj_1" instance=ExtResource( 9 )]
+transform = Transform( -0.690706, 0, 0.723136, 0, 1, 0, -0.723136, 0, -0.690706, -3.96543, 0, -1.96713 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="taburet" parent="obj_1" instance=ExtResource( 10 )]
+transform = Transform( 0.871539, 0, 0.490326, 0, 1, 0, -0.490326, 0, 0.871539, -0.503433, 0.000999689, 1.07481 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="taburet2" parent="obj_1" instance=ExtResource( 10 )]
+transform = Transform( 0.661233, 0, -0.75018, 0, 1, 0, 0.75018, 0, 0.661233, -8.23282, 0.000999689, -4.22937 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="table11" parent="obj_1" instance=ExtResource( 8 )]
+transform = Transform( 0.110833, 0.434212, 0.893967, -0.968934, 0.24732, 0, -0.221096, -0.866194, 0.448134, 6.35975, 0.332404, 5.62257 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="skamia21" parent="obj_1" instance=ExtResource( 9 )]
+transform = Transform( -0.858629, 0, -0.512598, 0, 1, 0, 0.512598, 0, -0.858629, 6.4217, 0, 6.78091 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="skamia22" parent="obj_1" instance=ExtResource( 9 )]
+transform = Transform( 2.08726e-09, 0.0477516, -0.998859, 1, -4.37114e-08, 0, -4.36615e-08, -0.998859, -0.0477516, 6.81398, 0.241212, 4.58116 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="table12" parent="obj_1" instance=ExtResource( 8 )]
+transform = Transform( 0.998555, 0, 0.0537478, 0, 1, 0, -0.0537478, 0, 0.998555, 4.76306, 0, 7.77221 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="skamia23" parent="obj_1" instance=ExtResource( 9 )]
+transform = Transform( 0.992422, 0, 0.122874, 0, 1, 0, -0.122874, 0, 0.992422, 5.67678, 0, 7.64794 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="skamia24" parent="obj_1" instance=ExtResource( 9 )]
+transform = Transform( 0.997123, 0, -0.0757966, 0, 1, 0, 0.0757966, 0, 0.997123, 3.78049, 0, 6.76391 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="taburet10" parent="obj_1" instance=ExtResource( 10 )]
+transform = Transform( -0.993294, 0, 0.115613, 0, 1, 0, -0.115613, 0, -0.993294, 8.46619, 0.000999689, 5.59234 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="taburet3" parent="obj_1" instance=ExtResource( 10 )]
+transform = Transform( 0.732935, 0, 0.680299, 0, 1, 0, -0.680299, 0, 0.732935, -6.49606, 0.000999689, 4.39187 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="taburet4" parent="obj_1" instance=ExtResource( 10 )]
+transform = Transform( 0.641061, 0, -0.76749, 0, 1, 0, 0.76749, 0, 0.641061, 8.19529, 0.000999689, 2.58511 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="taburet9" parent="obj_1" instance=ExtResource( 10 )]
+transform = Transform( 0.755488, 0, 0.655163, 0, 1, 0, -0.655163, 0, 0.755488, -3.81622, 0.000999689, 6.1123 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="taburet5" parent="obj_1" instance=ExtResource( 10 )]
+transform = Transform( 0.608346, 0, 0.793672, 0, 1, 0, -0.793672, 0, 0.608346, 4.47227, 0.000999689, -8.23721 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="taburet6" parent="obj_1" instance=ExtResource( 10 )]
+transform = Transform( 0.313479, 0, 0.949595, 0, 1, 0, -0.949595, 0, 0.313479, 2.06776, 0.000999689, -1.65973 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="taburet7" parent="obj_1" instance=ExtResource( 10 )]
+transform = Transform( -0.843926, 0, -0.53646, 0, 1, 0, 0.53646, 0, -0.843926, 3.0447, 0.000999689, -2.62762 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="bartable" parent="obj_1" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4, 0, -4.8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="bartable2" parent="obj_1" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4, 0, -4.8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="bartable3" parent="obj_1" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4, 0, -4.8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="bartable4" parent="obj_1" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 0, -4.8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="bartable_1" parent="obj_1" instance=ExtResource( 11 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1, 0, -8.4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="bartable_2" parent="obj_1" instance=ExtResource( 11 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1, 0, -7.4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="bartable_3" parent="obj_1" instance=ExtResource( 11 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 1, 0, -6.4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="barrel" parent="obj_1" instance=ExtResource( 12 )]
+transform = Transform( 0.904894, 0, -0.425637, 0, 1, 0, 0.425637, 0, 0.904894, 1.69955, 0, -8.51232 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="barrel2" parent="obj_1" instance=ExtResource( 12 )]
+transform = Transform( 0.926581, 0, 0.376095, 0, 1, 0, -0.376095, 0, 0.926581, 2.45627, 0, -8.54035 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="barrel3" parent="obj_1" instance=ExtResource( 12 )]
+transform = Transform( 0.690946, 0, 0.722907, 0, 1, 0, -0.722907, 0, 0.690946, 2.06389, 0, -8.01718 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="barrel5" parent="obj_1" instance=ExtResource( 12 )]
+transform = Transform( 0.518027, 0, 0.855364, 0, 1, 0, -0.855364, 0, 0.518027, -2.23706, 0, -3.16231 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="barrel6" parent="obj_1" instance=ExtResource( 12 )]
+transform = Transform( -0.27703, 0, 0.960861, 0, 1, 0, -0.960861, 0, -0.27703, -2.18572, 0, -3.91781 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="barrel7" parent="obj_1" instance=ExtResource( 12 )]
+transform = Transform( -0.646603, 0, 0.762826, 0, 1, 0, -0.762826, 0, -0.646603, -1.7065, 0, -3.47282 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="barrel4" parent="obj_1" instance=ExtResource( 12 )]
+transform = Transform( 0.624807, 0, -0.78078, 0, 1, 0, 0.78078, 0, 0.624807, 3.06352, 0, -8.53101 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="barrel_2" parent="obj_1" instance=ExtResource( 14 )]
+transform = Transform( 0.133467, 0, 0.991053, 0, 1, 0, -0.991053, 0, 0.133467, -2.50963, 0.562066, -4.80378 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="barrel_3" parent="obj_1" instance=ExtResource( 14 )]
+transform = Transform( -0.324396, 0, 0.945921, 0, 1, 0, -0.945921, 0, -0.324396, -1.8551, 0.562066, -4.78874 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="barrel_5" parent="obj_1" instance=ExtResource( 14 )]
+transform = Transform( -0.993415, 0, -0.114573, 0, 1, 0, 0.114573, 0, -0.993415, 1.03171, 0.562066, -6.75474 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="barrel_6" parent="obj_1" instance=ExtResource( 14 )]
+transform = Transform( -0.995405, 0, 0.0957589, 0, 1, 0, -0.0957589, 0, -0.995405, 0.974263, 0.562066, -8.0558 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="barrel_7" parent="obj_1" instance=ExtResource( 14 )]
+transform = Transform( -0.934739, 0, -0.355335, 0, 1, 0, 0.355335, 0, -0.934739, 0.910838, 1.06207, -7.95492 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="barrel_4" parent="obj_1" instance=ExtResource( 14 )]
+transform = Transform( -0.0861993, 0, 0.996278, 0, 1, 0, -0.996278, 0, -0.0861993, -2.15497, 1.06207, -4.78874 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wine" parent="obj_1" instance=ExtResource( 15 )]
+transform = Transform( 0.878459, 0, 0.477818, 0, 1, 0, -0.477818, 0, 0.878459, -1.94614, 0.00100279, -5.28422 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wine2" parent="obj_1" instance=ExtResource( 15 )]
+transform = Transform( 0.903403, 0, -0.428793, 0, 1, 0, 0.428793, 0, 0.903403, -2.38017, 0.00100279, -5.30441 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wine3" parent="obj_1" instance=ExtResource( 15 )]
+transform = Transform( 0.752105, 0, 0.659044, 0, 1, 0, -0.659044, 0, 0.752105, -2.1783, 0.00100279, -5.62741 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wine4" parent="obj_1" instance=ExtResource( 15 )]
+transform = Transform( 0.752105, 0, 0.659044, 0, 1, 0, -0.659044, 0, 0.752105, 0.511678, 0.00100279, -6.66201 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wine5" parent="obj_1" instance=ExtResource( 15 )]
+transform = Transform( 0.355417, 0, -0.934708, 0, 1, 0, 0.934708, 0, 0.355417, 0.441022, 0.00100279, -7.73195 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wine6" parent="obj_1" instance=ExtResource( 15 )]
+transform = Transform( 0.672819, 0, -0.739807, 0, 1, 0, 0.739807, 0, 0.672819, 0.486444, 0.00100279, -8.09027 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wine7" parent="obj_1" instance=ExtResource( 15 )]
+transform = Transform( 0.672819, 0, -0.739807, 0, 1, 0, 0.739807, 0, 0.672819, -5.39436, 0.00100279, -2.46822 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wine8" parent="obj_1" instance=ExtResource( 15 )]
+transform = Transform( -0.633935, 0, -0.773387, 0, 1, 0, 0.773387, 0, -0.633935, -7.3261, 0.00100279, -4.01871 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wine9" parent="obj_1" instance=ExtResource( 15 )]
+transform = Transform( 0.391823, 0, -0.920041, 0, 1, 0, 0.920041, 0, 0.391823, 3.27309, 0.00100279, -0.117085 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wine10" parent="obj_1" instance=ExtResource( 15 )]
+transform = Transform( 0.997298, 0, 0.0734645, 0, 1, 0, -0.0734645, 0, 0.997298, -3.04322, 0.00100279, 1.2936 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="table9" parent="obj_1" instance=ExtResource( 8 )]
+transform = Transform( -0.908522, 0, 0.417835, 0, 1, 0, -0.417835, 0, -0.908522, -7.39313, 0, 7.18805 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="skamia17" parent="obj_1" instance=ExtResource( 9 )]
+transform = Transform( -0.789609, 0, 0.61361, 0, 1, 0, -0.61361, 0, -0.789609, -8.15761, 0, 6.46073 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="skamia18" parent="obj_1" instance=ExtResource( 9 )]
+transform = Transform( -0.960391, 0, 0.278655, 0, 1, 0, -0.278655, 0, -0.960391, -6.07815, 0, 7.42848 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="taburet8" parent="obj_1" instance=ExtResource( 10 )]
+transform = Transform( 0.357145, 0, 0.934049, 0, 1, 0, -0.934049, 0, 0.357145, -8.32266, 0.000999689, 8.3536 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wine23" parent="obj_1" instance=ExtResource( 15 )]
+transform = Transform( 0.545532, 0, -0.83809, 0, 1, 0, 0.83809, 0, 0.545532, -5.55643, 0.00100279, 8.18702 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wine24" parent="obj_1" instance=ExtResource( 15 )]
+transform = Transform( 0.865239, 0, 0.50136, 0, 1, 0, -0.50136, 0, 0.865239, -6.83656, 0.00100279, 7.88741 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wine15" parent="obj_1" instance=ExtResource( 15 )]
+transform = Transform( 0.539344, 0, 0.842086, 0, 1, 0, -0.842086, 0, 0.539344, -8.26657, 0.00100279, 2.66498 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wine16" parent="obj_1" instance=ExtResource( 15 )]
+transform = Transform( 0.989945, 0, 0.141454, 0, 1, 0, -0.141454, 0, 0.989945, -5.68514, 0.00100279, 4.54054 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wine25" parent="obj_1" instance=ExtResource( 15 )]
+transform = Transform( 0.989945, 0, 0.141454, 0, 1, 0, -0.141454, 0, 0.989945, 4.62397, 0.00100279, 6.27196 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wine17" parent="obj_1" instance=ExtResource( 15 )]
+transform = Transform( 0.752622, 0, -0.658453, 0, 1, 0, 0.658453, 0, 0.752622, 7.26231, 0.00100279, 2.60448 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wine18" parent="obj_1" instance=ExtResource( 15 )]
+transform = Transform( 0.999122, 0, 0.0418932, 0, 1, 0, -0.0418932, 0, 0.999122, 6.53628, 0.00100279, 0.3659 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wine26" parent="obj_1" instance=ExtResource( 15 )]
+transform = Transform( 0.579551, 0, 0.814936, 0, 1, 0, -0.814936, 0, 0.579551, 7.33051, 0.00100279, 8.03817 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wine27" parent="obj_1" instance=ExtResource( 15 )]
+transform = Transform( 0.914939, 0, -0.403593, 0, 1, 0, 0.403593, 0, 0.914939, 7.80705, 0.00100279, 5.00421 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wine19" parent="obj_1" instance=ExtResource( 15 )]
+transform = Transform( 0.406051, 0, -0.91385, 0, 1, 0, 0.91385, 0, 0.406051, 8.25051, 0.00100279, 1.43477 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wine11" parent="obj_1" instance=ExtResource( 15 )]
+transform = Transform( 0.75826, 0, 0.651953, 0, 1, 0, -0.651953, 0, 0.75826, 6.92053, 0.00100279, -3.5866 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wine12" parent="obj_1" instance=ExtResource( 15 )]
+transform = Transform( 0.882554, 0, -0.470211, 0, 1, 0, 0.470211, 0, 0.882554, 7.72119, 0.00100279, -1.74382 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wine13" parent="obj_1" instance=ExtResource( 15 )]
+transform = Transform( 0.227382, 0, -0.973806, 0, 1, 0, 0.973806, 0, 0.227382, 2.80286, 0.00100279, -7.76782 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="bartable_4" parent="obj_1" instance=ExtResource( 11 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6.49546, 0, -5.54035 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="bartable_5" parent="obj_1" instance=ExtResource( 11 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -6.49546, 0, -6.54035 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="bartable_6" parent="obj_1" instance=ExtResource( 11 )]
+transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, -6.49546, 0, -7.54035 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="barrel8" parent="obj_1" instance=ExtResource( 12 )]
+transform = Transform( -0.904894, 0, 0.425637, 0, 1, 0, -0.425637, 0, -0.904894, -7.19501, 0, -5.42803 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="barrel9" parent="obj_1" instance=ExtResource( 12 )]
+transform = Transform( -0.926581, 0, -0.376095, 0, 1, 0, 0.376095, 0, -0.926581, -7.95173, 0, -5.4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="barrel13" parent="obj_1" instance=ExtResource( 12 )]
+transform = Transform( -0.742069, 0, -0.670323, 0, 1, 0, 0.670323, 0, -0.742069, -7.85173, 0, -6.4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="barrel10" parent="obj_1" instance=ExtResource( 12 )]
+transform = Transform( -0.690946, 0, -0.722907, 0, 1, 0, 0.722907, 0, -0.690946, -7.55935, 0, -5.92317 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="barrel11" parent="obj_1" instance=ExtResource( 12 )]
+transform = Transform( -0.624807, 0, 0.78078, 0, 1, 0, -0.78078, 0, -0.624807, -8.55898, 0, -5.40934 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="barrel12" parent="obj_1" instance=ExtResource( 12 )]
+transform = Transform( 0.592464, 0, 0.805598, 0, 1, 0, -0.805598, 0, 0.592464, -8.25898, 0, -6.00934 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="barrel_8" parent="obj_1" instance=ExtResource( 14 )]
+transform = Transform( 0.917609, 0, -0.397484, 0, 1, 0, 0.397484, 0, 0.917609, -6.52717, 0.562066, -7.18561 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="barrel_9" parent="obj_1" instance=ExtResource( 14 )]
+transform = Transform( 0.909925, 0, 0.414773, 0, 1, 0, -0.414773, 0, 0.909925, -6.36972, 0.562066, -5.98455 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="barrel_10" parent="obj_1" instance=ExtResource( 14 )]
+transform = Transform( 0.987175, 0, -0.15964, 0, 1, 0, 0.15964, 0, 0.987175, -6.4063, 1.06207, -5.98543 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wine20" parent="obj_1" instance=ExtResource( 15 )]
+transform = Transform( 0.659044, 0, -0.752105, 0, 1, 0, 0.752105, 0, 0.659044, -5.90714, 0.00100279, -6.97834 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wine21" parent="obj_1" instance=ExtResource( 15 )]
+transform = Transform( 0.81087, 0, 0.585227, 0, 1, 0, -0.585227, 0, 0.81087, -5.93648, 0.00100279, -6.1084 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wine22" parent="obj_1" instance=ExtResource( 15 )]
+transform = Transform( 0.998877, 0, -0.0473676, 0, 1, 0, 0.0473676, 0, 0.998877, -5.9819, 0.00100279, -5.85008 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wine14" parent="obj_1" instance=ExtResource( 15 )]
+transform = Transform( 0.882201, 0, 0.470873, 0, 1, 0, -0.470873, 0, 0.882201, 4.98878, 0.00100279, -7.84407 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="decor" type="Node" parent="."]
+
+[node name="steps" parent="decor" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3, 0, -3.2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="steps2" parent="decor" instance=ExtResource( 16 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.73718, 0, -6.47576 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="steps_mini" parent="decor" instance=ExtResource( 17 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.85607, 1.50176, -4.82453 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="steps_mini2" parent="decor" instance=ExtResource( 17 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3, 0, -1.9 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall_0" parent="decor" instance=ExtResource( 7 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3, 0, -7 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="barrel" parent="decor" instance=ExtResource( 12 )]
+transform = Transform( 0.953507, -0.301372, -1.31734e-08, 0, -4.37114e-08, 1, -0.301372, -0.953507, -4.16791e-08, -7.15782, 0.872932, -5.16625 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="barrel2" parent="decor" instance=ExtResource( 12 )]
+transform = Transform( 0.170055, 0.985435, 4.30747e-08, 0, -4.37114e-08, 1, 0.985435, -0.170055, -7.43333e-09, -8.55413, 0.872932, -5.40249 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="barrel3" parent="decor" instance=ExtResource( 12 )]
+transform = Transform( 0.662816, -0.748782, -3.27303e-08, 0, -4.37114e-08, 1, -0.748782, -0.662816, -2.89726e-08, -7.60076, 0.872932, -5.82855 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="shield" parent="decor" instance=ExtResource( 18 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.03354, 1.21654, 4.89454 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="shield2" parent="decor" instance=ExtResource( 18 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.97167, 1.24898, 8.9024 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="shield3" parent="decor" instance=ExtResource( 18 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.0731, 1.19961, -8.90239 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="shield_2" parent="decor" instance=ExtResource( 19 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -8.90239, 1.37167, 0.995785 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="shield_3" parent="decor" instance=ExtResource( 19 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.00283, 1.50455, -0.9024 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="painting" parent="decor" instance=ExtResource( 20 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.90235, 1.75485, 1.04857 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="painting2" parent="decor" instance=ExtResource( 20 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.00781, 1.96806, -1.09764 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="painting3" parent="decor" instance=ExtResource( 20 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 8.90203, 1.84577, -4.95643 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="flowerbed" parent="decor" instance=ExtResource( 21 )]
+transform = Transform( 0.856015, 0, -0.516952, 0, 1, 0, 0.516952, 0, 0.856015, 8.19266, 0.00100017, -8.28036 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="flowerbed2" parent="decor" instance=ExtResource( 21 )]
+transform = Transform( -0.595734, 0, 0.803182, 0, 1, 0, -0.803182, 0, -0.595734, -8.42501, 0.00100017, 4.39123 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="flowerbed3" parent="decor" instance=ExtResource( 21 )]
+transform = Transform( 0.758385, 0, -0.651807, 0, 1, 0, 0.651807, 0, 0.758385, 3.94612, 0.00100017, -0.477196 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="flowerbed5" parent="decor" instance=ExtResource( 21 )]
+transform = Transform( 0.490752, 0, 0.8713, 0, 1, 0, -0.8713, 0, 0.490752, -3.60661, 0.00100017, -5.62906 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="flowerbed4" parent="decor" instance=ExtResource( 21 )]
+transform = Transform( 0.817497, 0, 0.575933, 0, 1, 0, -0.575933, 0, 0.817497, 4.39628, 0.00100017, 0.189712 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="flowerbed6" parent="decor" instance=ExtResource( 21 )]
+transform = Transform( -0.27661, 0, 0.960982, 0, 1, 0, -0.960982, 0, -0.27661, -4.32815, 0.000999808, 1.99634 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="flowerbed7" parent="decor" instance=ExtResource( 21 )]
+transform = Transform( -0.969953, 0, -0.243293, 0, 1, 0, 0.243293, 0, -0.969953, 0.224586, 0.000999808, 8.38727 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="flowerbed8" parent="decor" instance=ExtResource( 21 )]
+transform = Transform( -0.423962, 0, -0.905679, 0, 1, 0, 0.905679, 0, -0.423962, 8.36272, 0.000999808, 8.37726 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="flowerbed9" parent="decor" instance=ExtResource( 21 )]
+transform = Transform( 0.843832, 0, 0.536607, 0, 1, 0, -0.536607, 0, 0.843832, 5.65264, 0.000999808, -0.338583 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="PlayerSpawners" type="Node" parent="."]
+
+[node name="PlayerSpawner1" type="Position3D" parent="PlayerSpawners"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3853, 0.5, 0.507682 )
+
+[node name="PlayerSpawner2" type="Position3D" parent="PlayerSpawners"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.67867, 0.5, -6.2451 )
+
+[node name="PlayerSpawner3" type="Position3D" parent="PlayerSpawners"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.62732, 0.5, -5.8745 )
+
+[node name="PlayerSpawner4" type="Position3D" parent="PlayerSpawners"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.75018, 0.5, -7.39165 )
+
+[node name="PlayerSpawner5" type="Position3D" parent="PlayerSpawners"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.36832, 0.5, -2.05508 )
+
+[node name="PlayerSpawner6" type="Position3D" parent="PlayerSpawners"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.02153, 0.5, 1.08053 )
+
+[node name="PlayerSpawner7" type="Position3D" parent="PlayerSpawners"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.42358, 0.5, 5.7538 )
+
+[node name="PlayerSpawner8" type="Position3D" parent="PlayerSpawners"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.18389, 0.5, -8.20147 )
+
+[node name="PlayerSpawner9" type="Position3D" parent="PlayerSpawners"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.75899, 0.5, 8.19821 )
+
+[node name="PlayerSpawner10" type="Position3D" parent="PlayerSpawners"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.13893, 0.5, 3.61314 )
+
+[node name="PlayerSpawner11" type="Position3D" parent="PlayerSpawners"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.18804, 0.500001, 7.71689 )
