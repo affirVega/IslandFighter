@@ -1,8 +1,16 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://scenes/Menu/Menu.gd" type="Script" id=1]
 [ext_resource path="res://assets/player/skin_preview.tscn" type="PackedScene" id=2]
 [ext_resource path="res://icon.png" type="Texture" id=3]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://Fonts/OpenSans-VariableFont_wdth,wght.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 20
+use_filter = true
+font_data = SubResource( 1 )
 
 [node name="Menu" type="Control"]
 anchor_right = 1.0
@@ -15,9 +23,23 @@ anchor_top = 1.0
 anchor_bottom = 1.0
 margin_left = 128.0
 margin_top = -48.0
-margin_right = 320.0
-margin_bottom = -16.0
+margin_right = 256.0
+margin_bottom = -15.0
+hint_tooltip = "Поле для ввода IP адресса сервера"
 text = "127.0.0.1"
+clear_button_enabled = true
+caret_blink = true
+caret_blink_speed = 0.5
+
+[node name="PortAddress" type="LineEdit" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 256.0
+margin_top = -48.0
+margin_right = 320.0
+margin_bottom = -15.0
+hint_tooltip = "Поле для ввода порта сервера"
+text = "3456"
 clear_button_enabled = true
 caret_blink = true
 caret_blink_speed = 0.5
@@ -29,6 +51,7 @@ margin_left = 128.0
 margin_top = -88.0
 margin_right = 320.0
 margin_bottom = -56.0
+hint_tooltip = "Поле для ввода никнейма"
 text = "Player"
 clear_button_enabled = true
 caret_blink = true
@@ -77,8 +100,8 @@ margin_top = -84.0
 margin_right = 120.0
 margin_bottom = -60.0
 bbcode_enabled = true
-bbcode_text = "[right]UsenName:[/right]"
-text = "UsenName:"
+bbcode_text = "[right]Юзернейм:[/right]"
+text = "Юзернейм:"
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="."]
 anchor_top = 1.0
@@ -97,8 +120,40 @@ margin_top = -125.0
 margin_right = 120.0
 margin_bottom = -99.0
 bbcode_enabled = true
-bbcode_text = "[right]Skin:[/right]"
-text = "Skin:"
+bbcode_text = "[right]Скин:[/right]"
+text = "Скин:"
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -400.0
+margin_top = 16.0
+margin_right = -64.0
+margin_bottom = 48.0
+custom_fonts/normal_font = SubResource( 2 )
+bbcode_enabled = true
+bbcode_text = "[right]Измени цвет своего ника тут![/right]"
+text = "Измени цвет своего ника тут!"
+
+[node name="Color_Text" type="ColorPickerButton" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -32.0
+margin_bottom = 32.0
+hint_tooltip = "Текст"
+flat = true
+icon_align = 1
+color = Color( 1, 1, 1, 1 )
+
+[node name="Color_Outline" type="ColorPickerButton" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -32.0
+margin_top = 32.0
+margin_bottom = 64.0
+hint_tooltip = "Обводка"
+flat = true
+icon_align = 1
 
 [node name="select_skin" type="OptionButton" parent="."]
 anchor_top = 1.0
@@ -107,6 +162,7 @@ margin_left = 128.0
 margin_top = -128.0
 margin_right = 320.0
 margin_bottom = -96.0
+hint_tooltip = "Выбор скина"
 
 [node name="Viewport" type="Viewport" parent="."]
 size = Vector2( 500, 500 )
@@ -122,4 +178,6 @@ texture = ExtResource( 3 )
 [connection signal="text_changed" from="UserName" to="." method="_on_UserName_text_changed"]
 [connection signal="pressed" from="ButtonConnect" to="." method="_on_ButtonConnect_pressed"]
 [connection signal="pressed" from="ButtonHost" to="." method="_on_ButtonHost_pressed"]
+[connection signal="color_changed" from="Color_Text" to="." method="_on_Color_Text_color_changed"]
+[connection signal="color_changed" from="Color_Outline" to="." method="_on_Color_Outline_color_changed"]
 [connection signal="item_selected" from="select_skin" to="." method="_on_select_skin_item_selected"]

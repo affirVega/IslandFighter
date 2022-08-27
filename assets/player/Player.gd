@@ -2,7 +2,7 @@ extends KinematicBody
 
 export (PackedScene) var bottle_scene
 
-const SPEED = 3
+const SPEED = 160
 const JUMP = 8
 const GRAVITY = 0.3
 const ROTATE = 0.05
@@ -27,6 +27,8 @@ func _ready():
 remote func initialize(data):
 	set_nickname(data.name)
 	set_skin(data.skin_id)
+	$Nametag.modulate = data.text_color
+	$Nametag.outline_modulate = data.outline_color
 
 remote func set_nickname(new_name: String):
 	$Nametag.text = new_name
@@ -66,7 +68,7 @@ func _physics_process(delta):
 	if Input.is_action_pressed("player_jump"):
 		moving_vec.y += 1
 		
-	moving_vec = moving_vec.normalized() * SPEED
+	moving_vec = moving_vec.normalized() * SPEED * delta
 
 	move_and_slide(transform.basis.xform(Vector3(0, y_pos, moving_vec.z)), Vector3.UP)
 	#move_and_slide(moving_vec, Vector3.UP)
