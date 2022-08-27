@@ -2,6 +2,7 @@ extends Control
 
 
 onready var iPAddress = $IPAddress
+onready var portAddress = $PortAddress
 onready var buttonHost = $ButtonHost
 onready var buttonConnect = $ButtonConnect
 onready var labelStatus = $LabelStatus
@@ -51,7 +52,8 @@ func add_items_skin():
 
 func _on_ButtonHost_pressed():
 	var server = NetworkedMultiplayerENet.new()
-	var err = server.create_server(3456, 2)
+	var port = int(portAddress.get_text())
+	var err = server.create_server(port, 2)
 	
 	if err != OK:
 		_set_status("Не могу подключиться к серверу по данному IP.", false)
@@ -65,7 +67,8 @@ func _on_ButtonHost_pressed():
 func _on_ButtonConnect_pressed():	
 	var client = NetworkedMultiplayerENet.new()
 	var ip = iPAddress.get_text()
-	client.create_client(ip, 3456)	
+	var port = int(portAddress.get_text())
+	client.create_client(ip, port)	
 	get_tree().set_network_peer(client) # Replace with function body.
 	_set_status("Поиск сервера...", true)
 	

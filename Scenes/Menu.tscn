@@ -15,10 +15,23 @@ anchor_top = 1.0
 anchor_bottom = 1.0
 margin_left = 128.0
 margin_top = -48.0
-margin_right = 320.0
-margin_bottom = -16.0
+margin_right = 256.0
+margin_bottom = -15.0
 hint_tooltip = "Поле для ввода IP адресса сервера"
 text = "127.0.0.1"
+clear_button_enabled = true
+caret_blink = true
+caret_blink_speed = 0.5
+
+[node name="PortAddress" type="LineEdit" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 256.0
+margin_top = -48.0
+margin_right = 320.0
+margin_bottom = -15.0
+hint_tooltip = "Поле для ввода IP адресса сервера"
+text = "3456"
 clear_button_enabled = true
 caret_blink = true
 caret_blink_speed = 0.5
