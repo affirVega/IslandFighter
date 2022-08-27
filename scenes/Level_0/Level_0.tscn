@@ -2116,37 +2116,39 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="PlayerSpawners" type="Node" parent="."]
+[node name="player_spawners" type="Node" parent="."]
 
-[node name="PlayerSpawner1" type="Position3D" parent="PlayerSpawners"]
+[node name="PlayerSpawner1" type="Position3D" parent="player_spawners"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3853, 0.5, 0.507682 )
 
-[node name="PlayerSpawner2" type="Position3D" parent="PlayerSpawners"]
+[node name="PlayerSpawner2" type="Position3D" parent="player_spawners"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.67867, 0.5, -6.2451 )
 
-[node name="PlayerSpawner3" type="Position3D" parent="PlayerSpawners"]
+[node name="PlayerSpawner3" type="Position3D" parent="player_spawners"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.62732, 0.5, -5.8745 )
 
-[node name="PlayerSpawner4" type="Position3D" parent="PlayerSpawners"]
+[node name="PlayerSpawner4" type="Position3D" parent="player_spawners"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.75018, 0.5, -7.39165 )
 
-[node name="PlayerSpawner5" type="Position3D" parent="PlayerSpawners"]
+[node name="PlayerSpawner5" type="Position3D" parent="player_spawners"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.36832, 0.5, -2.05508 )
 
-[node name="PlayerSpawner6" type="Position3D" parent="PlayerSpawners"]
+[node name="PlayerSpawner6" type="Position3D" parent="player_spawners"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.02153, 0.5, 1.08053 )
 
-[node name="PlayerSpawner7" type="Position3D" parent="PlayerSpawners"]
+[node name="PlayerSpawner7" type="Position3D" parent="player_spawners"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.42358, 0.5, 5.7538 )
 
-[node name="PlayerSpawner8" type="Position3D" parent="PlayerSpawners"]
+[node name="PlayerSpawner8" type="Position3D" parent="player_spawners"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.18389, 0.5, -8.20147 )
 
-[node name="PlayerSpawner9" type="Position3D" parent="PlayerSpawners"]
+[node name="PlayerSpawner9" type="Position3D" parent="player_spawners"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.75899, 0.5, 8.19821 )
 
-[node name="PlayerSpawner10" type="Position3D" parent="PlayerSpawners"]
+[node name="PlayerSpawner10" type="Position3D" parent="player_spawners"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.13893, 0.5, 3.61314 )
 
-[node name="PlayerSpawner11" type="Position3D" parent="PlayerSpawners"]
+[node name="PlayerSpawner11" type="Position3D" parent="player_spawners"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.18804, 0.500001, 7.71689 )
+
+[node name="players" type="Node" parent="."]

@@ -25,6 +25,7 @@ font_data = SubResource( 3 )
 script = ExtResource( 4 )
 
 [node name="Skins" type="Spatial" parent="."]
+transform = Transform( 0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0, 0, 0 )
 
 [node name="cooldog" parent="Skins" instance=ExtResource( 2 )]
 visible = false
@@ -41,21 +42,21 @@ visible = false
 visible = false
 
 [node name="collision_hitbox" type="CollisionShape" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.615388, 0 )
+transform = Transform( 0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0, 0.435398, 0 )
 shape = SubResource( 1 )
 
 [node name="hitbox_hit" type="CollisionShape" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.615, 0 )
+transform = Transform( 0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0, 0.43501, 0 )
 shape = SubResource( 2 )
 disabled = true
 
 [node name="Nametag" type="Label3D" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.52915, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.21684, 0 )
 pixel_size = 0.001
 billboard = 1
 text = "Player"
 font = SubResource( 4 )
 
 [node name="Camera" type="Camera" parent="."]
-transform = Transform( 1, 0, 0, 0, 0.977849, 0.209311, 0, -0.209311, 0.977849, 0, 1.55712, 1.8295 )
+transform = Transform( 1, 0, 0, 0, 0.977849, 0.209311, 0, -0.209311, 0.977849, 0, 1.09, 1.28 )
 fov = 71.9877

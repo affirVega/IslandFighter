@@ -7,6 +7,7 @@
 extents = Vector3( 0.130267, 0.248166, 0.129344 )
 
 [node name="RigidBody" type="RigidBody"]
+collision_layer = 2
 script = ExtResource( 2 )
 
 [node name="buttle" parent="." instance=ExtResource( 1 )]

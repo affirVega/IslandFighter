@@ -24,11 +24,9 @@ func _ready():
 		GV.S1TN4M: $Skins/s1tn4m,
 	}
 
-	if is_network_master():
-		set_skin(Singleton.current_skin)
-		rpc('set_skin', Singleton.current_skin)
-		set_nickname(Singleton.nickname)
-		rpc('set_nickname', Singleton.nickname)
+remote func initialize(data):
+	set_nickname(data.name)
+	set_skin(data.skin_id)
 
 remote func set_nickname(new_name: String):
 	$Nametag.text = new_name
