@@ -22,6 +22,7 @@ outline_size = 10
 font_data = SubResource( 3 )
 
 [node name="Spatial" type="KinematicBody" groups=["Player"]]
+collision_layer = 4
 script = ExtResource( 4 )
 
 [node name="Skins" type="Spatial" parent="."]
@@ -57,6 +58,8 @@ billboard = 1
 text = "Player"
 font = SubResource( 4 )
 
-[node name="Camera" type="Camera" parent="."]
-transform = Transform( 1, 0, 0, 0, 0.977849, 0.209311, 0, -0.209311, 0.977849, 0, 1.09, 1.28 )
-fov = 71.9877
+[node name="Spatial" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.657701, 0.195032 )
+
+[node name="ClippedCamera" type="ClippedCamera" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 0.965491, 0.260437, 0, -0.260437, 0.965491, 0, 0.470801, 1.06729 )
