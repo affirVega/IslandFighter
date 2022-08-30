@@ -43,6 +43,7 @@ func _ready():
 	}
 	set_skin_menu(0)
 	load_data()
+	
 
 
 func save_data():
@@ -105,6 +106,8 @@ func _process(delta):
 	$Viewport/skin_preview/skins.rotation_degrees.y += 30*delta
 	#Для дебага по хвосту
 	#$Viewport/skin_preview/skins.rotation.y = 8.9
+	$AudioStreamPlayer.stream_paused = !$CheckButton.pressed
+	$AudioStreamPlayer.volume_db = $HSlider.value
 
 
 func add_items_skin():

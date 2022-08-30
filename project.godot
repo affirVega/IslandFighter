@@ -12,7 +12,7 @@ _global_script_classes=[ {
 "base": "Reference",
 "class": "GV",
 "language": "GDScript",
-"path": "res://scripts/GV.gd"
+"path": "res://Scripts/GV.gd"
 } ]
 _global_script_class_icons={
 "GV": ""

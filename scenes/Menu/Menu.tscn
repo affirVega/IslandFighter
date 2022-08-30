@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://scenes/Menu/Menu.gd" type="Script" id=1]
 [ext_resource path="res://assets/player/skin_preview.tscn" type="PackedScene" id=2]
 [ext_resource path="res://icon.png" type="Texture" id=3]
+[ext_resource path="res://scenes/sound.tscn" type="PackedScene" id=4]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://Fonts/OpenSans-VariableFont_wdth,wght.ttf"
@@ -113,6 +114,36 @@ bbcode_enabled = true
 bbcode_text = "[right]IP:[/right]"
 text = "IP:"
 
+[node name="RichTextLabel5" type="RichTextLabel" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -136.0
+margin_top = -44.0
+margin_right = -88.0
+margin_bottom = -20.0
+bbcode_enabled = true
+bbcode_text = "[right]Music:[/right]"
+text = "Music:"
+
+[node name="RichTextLabel6" type="RichTextLabel" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -160.0
+margin_top = -104.0
+margin_right = 160.0
+margin_bottom = -56.0
+bbcode_enabled = true
+bbcode_text = "[center]Music: Banjo Fever by Alexander Nakarada (www.serpentsoundstudios.com)
+Licensed under Creative Commons BY Attribution 4.0 License
+https://creativecommons.org/licenses/by/4.0/[/center]"
+text = "Music: Banjo Fever by Alexander Nakarada (www.serpentsoundstudios.com)
+Licensed under Creative Commons BY Attribution 4.0 License
+https://creativecommons.org/licenses/by/4.0/"
+
 [node name="RichTextLabel3" type="RichTextLabel" parent="."]
 anchor_top = 1.0
 anchor_bottom = 1.0
@@ -174,6 +205,35 @@ render_target_v_flip = true
 [node name="Skins" type="Sprite" parent="."]
 position = Vector2( 188, 232 )
 texture = ExtResource( 3 )
+
+[node name="CheckButton" type="CheckButton" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -96.0
+margin_top = -48.0
+margin_right = -16.0
+margin_bottom = -8.0
+pressed = true
+
+[node name="AudioStreamPlayer" parent="." instance=ExtResource( 4 )]
+
+[node name="HSlider" type="HSlider" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -16.0
+margin_top = -48.0
+margin_right = 168.0
+margin_bottom = -8.0
+min_value = -80.0
+max_value = 0.0
+step = 5.0
+value = -30.0
+tick_count = 9
+ticks_on_borders = true
 
 [connection signal="text_changed" from="UserName" to="." method="_on_UserName_text_changed"]
 [connection signal="pressed" from="ButtonConnect" to="." method="_on_ButtonConnect_pressed"]

@@ -42,6 +42,6 @@ light_specular = 0.0
 [node name="Nametag_preview" type="Label3D" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.22319, 0 )
 pixel_size = 0.001
-billboard = 1
+billboard = 2
 text = "Player"
 font = SubResource( 4 )

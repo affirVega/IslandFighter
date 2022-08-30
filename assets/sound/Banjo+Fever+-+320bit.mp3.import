@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Banjo+Fever+-+320bit.mp3-884e93921430c37479414653b2751d73.mp3str"
+
+[deps]
+
+source_file="res://assets/sound/Banjo+Fever+-+320bit.mp3"
+dest_files=[ "res://.import/Banjo+Fever+-+320bit.mp3-884e93921430c37479414653b2751d73.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
