@@ -215,7 +215,7 @@ func _deferred_stop_scene():
 
 
 func load_level():
-	var game = preload("res://Scenes/Level_0/Level_0.tscn").instance()
+	var game = preload("res://scenes/Level_0/Level_1.tscn").instance()
 	game.name = 'world'
 	get_tree().get_root().add_child(game)
 	current_level = game

@@ -2,4 +2,5 @@
 
 [ext_resource path="res://assets/player/skins/s1tn4m/s1tn4m.gltf" type="PackedScene" id=1]
 
+
 [node name="s1tn4m" instance=ExtResource( 1 )]

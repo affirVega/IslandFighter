@@ -2,4 +2,5 @@
 
 [ext_resource path="res://assets/player/skins/mikamoro/mikamoro.gltf" type="PackedScene" id=2]
 
+
 [node name="mikamoro" instance=ExtResource( 2 )]
