@@ -77,19 +77,16 @@ func load_data():
 		return
 	var settings = json_result.result
 	# ставим настройки на место
-	my_data.name = settings.name
-	my_data.skin_id = settings.skin_id
-	my_data.text_color = Color(int(settings.text_color))
-	my_data.outline_color = Color(int(settings.outline_color))
-	$UserName.text = my_data.name
-	$select_skin.selected = my_data.skin_id
-	$Color_Text.color = my_data.text_color
-	$Color_Outline.color = my_data.outline_color
-	_on_UserName_text_changed(my_data.name)
-	_on_select_skin_item_selected(my_data.skin_id)
-	_on_Color_Text_color_changed(my_data.text_color)
-	_on_Color_Outline_color_changed(my_data.outline_color)
-	
+	$UserName.text = settings.name
+	$select_skin.selected = settings.skin_id
+	$Color_Text.color = Color(int(settings.text_color))
+	$Color_Outline.color = Color(int(settings.outline_color))
+	$IPAddress.text = settings.ip
+	$PortAddress.text = settings.port
+	_on_UserName_text_changed(settings.name)
+	_on_select_skin_item_selected(settings.skin_id)
+	_on_Color_Text_color_changed(Color(int(settings.text_color)))
+	_on_Color_Outline_color_changed(Color(int(settings.outline_color)))
 
 
 func set_skin_menu(index: int):
@@ -206,6 +203,7 @@ func _end_game(with_error = ""):
 	buttonConnect.set_disabled(false)
 
 	_set_status(with_error, false)
+	$Viewport/skin_preview.visible = true
 
 
 func _deferred_stop_scene():
@@ -219,6 +217,7 @@ func load_level():
 	game.name = 'world'
 	get_tree().get_root().add_child(game)
 	current_level = game
+	# скрывает интерфейс
 	hide()
 
 
