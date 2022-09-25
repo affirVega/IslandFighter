@@ -17,6 +17,10 @@ font_data = SubResource( 1 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [  ],
+"_edit_vertical_guides_": [  ]
+}
 select_skin_path = NodePath("select_skin")
 
 [node name="IPAddress" type="LineEdit" parent="."]
@@ -119,9 +123,9 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -136.0
+margin_left = -56.0
 margin_top = -44.0
-margin_right = -88.0
+margin_right = -8.0
 margin_bottom = -20.0
 bbcode_enabled = true
 bbcode_text = "[right]Music:[/right]"
@@ -132,9 +136,9 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -160.0
+margin_left = -80.0
 margin_top = -104.0
-margin_right = 160.0
+margin_right = 240.0
 margin_bottom = -56.0
 bbcode_enabled = true
 bbcode_text = "[center]Music: Banjo Fever by Alexander Nakarada (www.serpentsoundstudios.com)
@@ -211,9 +215,9 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -96.0
+margin_left = -16.0
 margin_top = -48.0
-margin_right = -16.0
+margin_right = 64.0
 margin_bottom = -8.0
 pressed = true
 
@@ -224,9 +228,9 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -16.0
+margin_left = 64.0
 margin_top = -48.0
-margin_right = 168.0
+margin_right = 248.0
 margin_bottom = -8.0
 min_value = -80.0
 max_value = 0.0
