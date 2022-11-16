@@ -24,6 +24,10 @@ var my_data = {
 }
 var current_level = null
 
+var client: WebSocketClient = WebSocketClient.new()
+var server: WebSocketServer = WebSocketServer.new()
+var is_server = false
+var game_started = false
 
 func _ready():
 	randomize()
@@ -31,8 +35,11 @@ func _ready():
 	get_tree().connect("network_peer_disconnected", self, "_player_disconnected")
 	get_tree().connect("connection_failed", self, "_connected_fail")
 	get_tree().connect("connected_to_server", self, "_connected_ok")
-	get_tree().connect("server_disconnected", self, "_server_disconnected")
 	add_items_skin()
+	
+	client.connect("connection_error", self, "_client_disconnected")
+	client.connect("connection_closed", self, "_client_disconnected")
+	client.connect("connection_failed", self, "_client_disconnected")
 	
 	SKIN_OBJECTS = {
 		GV.COOLDOG: $Viewport/skin_preview/skins/cooldog,
@@ -43,7 +50,9 @@ func _ready():
 	}
 	set_skin_menu(0)
 	load_data()
-	
+
+func _client_disconnected(clean=true):
+	print('херня отключилассс')
 
 
 func save_data():
@@ -97,6 +106,16 @@ func set_skin_menu(index: int):
 
 
 func _process(delta):
+	if is_server:
+		if server.is_listening():
+			server.poll()
+	else:
+		if client.get_connection_status() == WebSocketClient.CONNECTION_DISCONNECTED:
+			client.disconnect_from_host()
+			_end_game()
+		else:
+			client.poll()
+	
 	var texture = $Viewport.get_texture()
 	$Skins.texture = texture
 	#$Viewport/skin_preview/skins.rotation.y += 0.01
@@ -122,10 +141,10 @@ func _set_status(text, isok):
 
 
 func _on_ButtonHost_pressed():
+	is_server = true
 	# Создание сервера
-	var server = NetworkedMultiplayerENet.new()
 	var port = int(portAddress.get_text())
-	var err = server.create_server(port, MAX_PLAYERS)
+	var err = server.listen(port, PoolStringArray(), true)
 	
 	if err != OK:
 		_set_status("Не могу создать сервер на этом порте.", false)
@@ -144,17 +163,28 @@ func _on_ButtonHost_pressed():
 	instance_player(1)
 	# сохраняем настройки
 	save_data()
+	game_started = true
 
 
 func _on_ButtonConnect_pressed():
+	is_server = false
 	# Подключение к серверу
-	var client = NetworkedMultiplayerENet.new()
 	var ip = iPAddress.get_text()
 	var port = int(portAddress.get_text())
-	client.create_client(ip, port)	
+	client.connect_to_url('{0}:{1}'.format([ip,port]), PoolStringArray(), true)	
 	get_tree().set_network_peer(client)
 	# сохраняем настройки
 	save_data()
+	game_started = true
+
+
+func _connection_closed(was_clean: bool):
+	print('was clean: ', was_clean)
+	_end_game('server disconnected')
+	
+func _connection_error():
+	print('connection error')
+	_end_game('server disconnected')
 
 
 func _player_connected(client_id):
@@ -186,11 +216,12 @@ func _connected_ok():
 	instance_player(get_tree().get_network_unique_id())
 
 
-func _server_disconnected():
+func _server_disconnected(_clean):
 	_end_game("Сервер разорвал соединение")
 
 
 func _end_game(with_error = ""):
+	game_started = false
 	if current_level != null:
 		# сцена освободится когда все функции завершат работу
 		call_deferred("_deferred_stop_scene")
